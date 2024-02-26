@@ -243,42 +243,58 @@ pasi që ekzekutohen në kontekste të ndryshme.
 #include <iostream>
 using namespace std;
 
-class Filmi{
-    private:
+const int NUMRI_AKTOREVE = 5;
+class Filmi {
+private:
     int id;
     string titulli;
     double imdb;
     int viti_i_realizimit;
     string zhanri;
-    
-    public:
-    void insert (int i, string t, double imdb, int v, string z){
+    string aktoret[NUMRI_AKTOREVE];
+
+public:
+    void insert(int i, string t, double i_rating, int v, string z,string a[]) {
         id = i;
         titulli = t;
-        this->imdb = imdb;
+        imdb = i_rating;
         viti_i_realizimit = v;
         zhanri = z;
+        for (int j = 0; j < NUMRI_AKTOREVE; ++j) {
+            aktoret[j] = a[j];
+        }
     }
-    void display(){
-        cout << id << endl;
-        cout << titulli << endl;
-        cout << imdb << endl;
-        cout << viti_i_realizimit << endl;
-        cout << zhanri << endl;
 
+    void display() {
+        cout << "ID: " << id << endl;
+        cout << "Titulli: " << titulli << endl;
+        cout << "IMDB Rating: " << imdb << endl;
+        cout << "Viti i Realizimit: " << viti_i_realizimit << endl;
+        cout << "Zhanri: " << zhanri << endl;
+
+        cout << "Aktoret: ";
+        for (int j = 0; j < NUMRI_AKTOREVE; ++j) {
+            cout << aktoret[j] << ", ";
+        }
+        cout << endl;
     }
 };
+
 int main() {
     Filmi filmi1;
-    filmi1.insert(123, "Interstellar",9.8,2014,"Sci-Fi");
+    string aktoret1[NUMRI_AKTOREVE] = {"Aktori1", "Aktori2", "Aktori3", "Aktori4", "Aktori5"};
+    filmi1.insert(123, "Interstellar", 9.8, 2014, "Sci-Fi", aktoret1);
     filmi1.display();
     cout << endl << endl;
+
     Filmi filmi2;
-    filmi2.insert(345, "Film_tjeter",9.9,2023,"Sci-Fi");
-    cout << endl << endl;
+    string aktoret2[NUMRI_AKTOREVE] = {"AktoriA", "AktoriB", "AktoriC", "AktoriD", "AktoriE"};
+    filmi2.insert(345, "Film_tjeter", 9.9, 2023, "Sci-Fi", aktoret2);
     filmi2.display();
+
     return 0;
 }
+
 
 ```
 ---
