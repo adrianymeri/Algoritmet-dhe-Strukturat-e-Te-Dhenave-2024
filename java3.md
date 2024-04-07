@@ -5,8 +5,8 @@
 Memoria është një varg bajtash ku ruhen shënime.
 
 Secili bajt i memories ka një adresë unike.
+![img2](https://github.com/adrianymeri/Algoritmet-dhe-Strukturat-e-Te-Dhenave-2024/assets/24792691/1c55c317-a494-43df-8f8c-4209b8260cea)
 
-![](/lendet/algoritmet-dhe-strukturat-e-te-dhenave/java1/img2.png)
 
 ---
 
@@ -25,8 +25,7 @@ int x = 5;
 int y = 3;
 int z = -2;
 ```
-
-![](/lendet/algoritmet-dhe-strukturat-e-te-dhenave/java1/img1.png)
+![img1](https://github.com/adrianymeri/Algoritmet-dhe-Strukturat-e-Te-Dhenave-2024/assets/24792691/245c9a61-f2df-453d-8186-844196d40675)
 
 ---
 
