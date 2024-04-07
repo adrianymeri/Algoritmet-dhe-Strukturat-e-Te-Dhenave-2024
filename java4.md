@@ -54,6 +54,7 @@ int main() {
 **Stack** quajmë memorien statike të bllokut të funksionit.
 
 **Heap** quajmë memorien e përbashkët të procesit.
+![image_java_4](https://github.com/adrianymeri/Algoritmet-dhe-Strukturat-e-Te-Dhenave-2024/assets/24792691/a0993047-9af8-4e49-9bc7-05a91c27baca)
 
 ---
 
