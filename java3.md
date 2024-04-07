@@ -80,7 +80,7 @@ Operatori `*x` për cilindo pointer `x` njihet si **operator i dereferencimit**.
 
 Është dhënë memoria në vazhdim si dhe pointeri `x` i cili ka vlerën 3.
 
-![](/lendet/algoritmet-dhe-strukturat-e-te-dhenave/java1/img3.png)
+![img3](https://github.com/adrianymeri/Algoritmet-dhe-Strukturat-e-Te-Dhenave-2024/assets/24792691/f251f854-9344-493a-907f-15556b29a894)
 
 ---
 
@@ -92,8 +92,7 @@ cout << *vargu;       // shfaqet 8
 cout << *(vargu + 3); // shfaqet 7
 cout << vargu[3];     // shfaqet 7
 ```
-
-![](/lendet/algoritmet-dhe-strukturat-e-te-dhenave/java1/img4.png)
+![img4](https://github.com/adrianymeri/Algoritmet-dhe-Strukturat-e-Te-Dhenave-2024/assets/24792691/54b21ec0-e28b-4ab8-8215-495ae2eceb49)
 
 ---
 
