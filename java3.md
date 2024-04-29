@@ -285,4 +285,60 @@ int main() {
 }
 ```
 
+**Detyrë**
+
+- Të deklarohet struktura `Drejtkendeshi`.
+- Të shkruhet funksioni `lexo()`, i cili dinamikisht alokon një drejtkëndësh dhe e mbush me vlera nga tastiera.
+- Në `main` të krijohet një varg prej `n` drejtkëndëshave (`n` të lexohet nga tastiera). Të mbushet vargu nga tastiera përmes funksionit `lexo`.
+- Të gjendet sipërfaqja totale e të gjithë drejtkëndëshave (përmes funksionit `siperfaqja`).
+- Të lirohen të gjitha resurset e alokuara.
+
+--
+
+```cpp
+#include <iostream>
+using namespace std;
+
+struct Drejtkendeshi { int a; int b; };
+
+Drejtkendeshi* lexo() {
+  int a, b;
+  cout << "Shtyp a: ";
+  cin >> a;
+  cout << "Shtyp b: ";
+  cin >> b;
+  return new Drejtkendeshi { a, b };
+}
+
+int siperfaqja(Drejtkendeshi *d) {
+  return d->a * d->b;
+}
+
+int main() {
+  int n;
+  cout << "Jepni numrin e drejtkendeshave: ";
+  cin >> n;
+  Drejtkendeshi** drejtkendeshat = new Drejtkendeshi*[n];
+  for (int i = 0; i < n; i++) {
+    cout << "Drejtkendeshi " << (i + 1) << endl;
+    drejtkendeshat[i] = lexo();
+  }
+
+  int s = 0;
+  for (int i = 0; i < n; i++) {
+    s += siperfaqja(drejtkendeshat[i]);
+  }
+
+  cout << "Siperfaqja totale: " << s;
+
+  for (int i = 0; i < n; i++) {
+    // Lirimi i alokimeve individuale.
+    delete drejtkendeshat[i];
+  }
+
+  // Lirimi i vargut të pointerëve.
+  delete[] drejtkendeshat;
+  return 0;
+}
+```
 ---
