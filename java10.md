@@ -23,3 +23,6 @@ Të krijohet një program i cili përmban klasën Laptopi dhe funksionin main si
 9. Të thirret funksioni i cili printon brendin në drejtimin e kundërt
 10. Të thirret funksioni merrVitet dhe të printohet lista e kthyer me vitet përkatëse brenda
 funksionit main. Printimi duhet të bëhet, ashtu që vitet të jenë të renditura nga më i vogli tek më i madhi.
+
+**Listat e lidhura - Detyra 3:**
+Të analizohen dhe implementohen te gjitha metodat e gatshme ne kuader te <list>: https://cplusplus.com/reference/list/list/
